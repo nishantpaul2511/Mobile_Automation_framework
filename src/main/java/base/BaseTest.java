@@ -46,13 +46,5 @@ public class BaseTest {
     }
 
 
-//    /**
-//     * Releases resources after the test has been executed
-//     */
-//    @AfterClass
-//    public void tearDown() {
-//        // TODO Quit the driver and stop Appium Service using the DriverUtils
-//
-//
-//    }
+
 }
