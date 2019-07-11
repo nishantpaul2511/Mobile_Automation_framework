@@ -38,11 +38,11 @@ public class DriverUtils {
      * @author NISHANT PAUL, Feb 24, 2017
      */
     public static AppiumDriver<MobileElement> setup() throws Exception {
-        File app = new File("/Users/nishantpaul/Documents/Automation_code/Transcoreapksprint3.apk");
+        File app = new File("/Users/********/Documents/Automation_code/*********.apk");
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("app", app.getAbsolutePath());
-        cap.setCapability("appPackage", "com.transcore.ezpass"); // com.bassforecast.android
-        cap.setCapability("appActivity", "com.transcore.ezpass.ui.splash.SplashActivity");
+        cap.setCapability("appPackage", "com.*******.******"); // com.bassforecast.android
+        cap.setCapability("appActivity", "com.*******.******.ui.splash.SplashActivity");
         cap.setCapability("platformVersion", "8.1.0");
         cap.setCapability("deviceName", "Nishant");
         String timestamp = new SimpleDateFormat("MMdd_HHmm").format(new Date());
