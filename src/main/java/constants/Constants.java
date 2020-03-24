@@ -14,7 +14,7 @@ public class Constants {
     // TODO prove the Contant values here
 
     public static String OR_Path = System.getProperty("user.dir") + "/src/main/java/constants/OR.properties";
-    public static String ReportFilename = "Transcore_";
+    public static String ReportFilename = "DemoReport";
     public static String name = "firstUser";
     public static String passwordfield = "password";
 
