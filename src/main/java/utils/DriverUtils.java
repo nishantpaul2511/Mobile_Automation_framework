@@ -47,7 +47,7 @@ public class DriverUtils {
         cap.setCapability("deviceName", "Nishant");
         String timestamp = new SimpleDateFormat("MMdd_HHmm").format(new Date());
         report = new ExtentReports(System.getProperty("user.dir") + "/test-output/" + Constants.ReportFilename + timestamp + ".html");
-        report.loadConfig(new File("/Users/nishantpaul/Documents/Automation_code/transcore-appium/extent-config.xml"));
+        report.loadConfig(new File("/Users/nishantpaul/Documents/Automation_code/demo-appium/extent-config.xml"));
 
         AppiumServiceBuilder builder = new AppiumServiceBuilder().withCapabilities(cap);
 
