@@ -82,7 +82,7 @@ public class Mail {
 
 
         //  Enter the report name with " . "  extension
-        sendmailAttachment(System.getProperty("user.dir") + "/test-output/Demo_0109_1704.html", "Transcore_0109_1704.html", "****@gmail.com,*****@gmail.com");
+        sendmailAttachment(System.getProperty("user.dir") + "/test-output/Demo_0109_1704.html", "Demo_0109_1704.html", "****@gmail.com,*****@gmail.com");
 
 
     }
