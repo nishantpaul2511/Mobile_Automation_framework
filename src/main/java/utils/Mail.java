@@ -37,7 +37,7 @@ public class Mail {
 
         Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("mutualmobile333@gmail.com", "bl@ckb0x"); // Enter your Gmail id and Password
+                return new PasswordAuthentication("******@gmail.com", "Password of your email"); // Enter your Gmail id and Password
             }
         });
 
@@ -45,9 +45,9 @@ public class Mail {
 
             Message message = new MimeMessage(session);
 
-            message.setFrom(new InternetAddress("mutualmobile333@gmail.com"));  // Enter your email id
+            message.setFrom(new InternetAddress("******@gmail.com"));  // Enter your email id
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
-            message.setSubject("Transcore_0109_1704.html");   // Enter the automation file name with .html extension
+            message.setSubject("Demo_0109_1704.html");   // Enter the automation file name with .html extension
             message.setText(msg);
 
             MimeBodyPart messageBodyPart = new MimeBodyPart();
@@ -82,7 +82,7 @@ public class Mail {
 
 
         //  Enter the report name with " . "  extension
-        sendmailAttachment(System.getProperty("user.dir") + "/test-output/Transcore_0109_1704.html", "Transcore_0109_1704.html", "nishant.paul@mutualmobile.com,ashraf.iftekhar@mutualmobile.com");
+        sendmailAttachment(System.getProperty("user.dir") + "/test-output/Demo_0109_1704.html", "Transcore_0109_1704.html", "****@gmail.com,*****@gmail.com");
 
 
     }
