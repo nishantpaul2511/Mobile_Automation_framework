@@ -221,7 +221,7 @@ public class DemoTest {
             String screenshot_path = GenericMethods.CaptureScreenshotAsBase64(result.getName());
             String image = logger.addScreenCapture(screenshot_path);
             logger.log(LogStatus.FAIL, result.getThrowable());
-            logger.log(LogStatus.FAIL, "Transcore Application Automation Test Failed Snapshot below: ");
+            logger.log(LogStatus.FAIL, "Demo Application Automation Test Failed Snapshot below: ");
             logger.log(LogStatus.FAIL, result.getName(), image);
 
         }
@@ -229,7 +229,7 @@ public class DemoTest {
         if (result.getStatus() == ITestResult.SUCCESS) {
             String screenshot_path = GenericMethods.CaptureScreenshotAsBase64(result.getName());
             String image = logger.addBase64ScreenShot(screenshot_path);
-            logger.log(LogStatus.PASS, "Transcore Application Automation Test Passed Snapshot below: ");
+            logger.log(LogStatus.PASS, "Demo Application Automation Test Passed Snapshot below: ");
             logger.log(LogStatus.PASS, result.getName(), image);
 
         }
